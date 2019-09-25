@@ -39,12 +39,12 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.each do |combo|
+    @board.match?{WIN_COMBINATIONS.each do |combo|
       if combo[0] == combo[1] &&
         combo[1] == combo[2]
         return true
       else
-        false
+        false}
   end
   
   
