@@ -31,7 +31,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   
-  def user_input
+  def turn
     u_i = gets.chomp
     u_i
   end
@@ -55,12 +55,6 @@ class TicTacToe
     else
       false
     end
-  end
-  
-  def turn(current_player)
-    this_first = user_input
-    this_second = input_to_index(this_first)
-    move(this_second, current_player)
   end
   
 end
