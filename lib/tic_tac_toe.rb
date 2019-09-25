@@ -40,8 +40,8 @@ class TicTacToe
   
   def won?
     WIN_COMBINATIONS.each do |combo|
-      if combo[0] == combo[1] &&
-        combo[1] == combo[2]
+      combo[0] == combo[1] &&
+      combo[1] == combo[2]
   end
   
   
