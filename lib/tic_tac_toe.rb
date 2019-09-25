@@ -39,7 +39,7 @@ class TicTacToe
   end
   
   def won?
-    @board.match(WIN_COMBINATIONS)? true : false
+    @board.scan(WIN_COMBINATIONS)? true : false
   end
   
   
