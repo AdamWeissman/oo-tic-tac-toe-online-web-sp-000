@@ -89,7 +89,7 @@ class TicTacToe
     end
     
     if over? && won?
-      puts "Congratulations #{winner}"
+      puts "Congratulations #{winner}!"
     else
       puts "Cat's game."
     end
