@@ -35,6 +35,7 @@ class TicTacToe
     u_i = gets.chomp
     index = input_to_index(u_i)
     valid_move?(index) ? move(index, current_player) : false
+    display_board
   end
   
   def input_to_index(user_input)
