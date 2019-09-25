@@ -60,8 +60,6 @@ class TicTacToe
   
 def winner
   won?[0]
-    
-  end
 end
   
   def input_to_index(user_input)
