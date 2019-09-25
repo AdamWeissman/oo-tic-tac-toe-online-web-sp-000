@@ -58,10 +58,11 @@ class TicTacToe
     draw? || won?
   end
   
-  def winner?
-    if combo == won?
-      combo[0].first
+def winner
+  if won?
+    @board[WIN_COMBINATIONS.first]
   end
+end
   
   def input_to_index(user_input)
     u_i = user_input.to_i - 1
