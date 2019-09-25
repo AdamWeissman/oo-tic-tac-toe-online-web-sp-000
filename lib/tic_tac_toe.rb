@@ -43,6 +43,7 @@ class TicTacToe
       @board[combo[0]] == @board[combo[1]] &&
       @board[combo[1]] == @board[combo[2]] &&
       position_taken?(combo[0])
+      yield
     end
   end
   
@@ -60,7 +61,7 @@ class TicTacToe
   
 def winner
   if won?
-    @board[WIN_COMBINATIONS.first]
+    
   end
 end
   
