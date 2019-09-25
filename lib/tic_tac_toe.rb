@@ -42,10 +42,6 @@ class TicTacToe
     WIN_COMBINATIONS.each do |combo|
       if combo[0] == combo[1] &&
         combo[1] == combo[2]
-        return true
-      else
-        false
-      end
   end
   
   
