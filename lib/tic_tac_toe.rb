@@ -34,7 +34,11 @@ class TicTacToe
   def turn
     u_i = gets.chomp
     index = input_to_index(u_i)
-    valid_move?(index)? (board[index] == current_player) : turn 
+    if valid_move?(index)
+      board[index] == current_player
+    else
+      turn
+    end
   end
     
   end
