@@ -38,7 +38,7 @@ class TicTacToe
     display_board
   end
   
-  def won?
+  def won?(@board)
     WIN_COMBINATIONS.match(@board)? true : false
   end
   
