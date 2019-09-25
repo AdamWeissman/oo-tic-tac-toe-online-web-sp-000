@@ -42,6 +42,7 @@ class TicTacToe
     WIN_COMBINATIONS.each do |combo|
       combo[0] == combo[1] &&
       combo[1] == combo[2]
+    end
   end
   
   
