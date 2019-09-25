@@ -46,7 +46,9 @@ class TicTacToe
     end
   end
   
-  
+  def full?
+    turn_count == 8? true : false
+  end
   
   def input_to_index(user_input)
     u_i = user_input.to_i - 1
