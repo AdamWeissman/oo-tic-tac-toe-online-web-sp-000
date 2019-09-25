@@ -58,6 +58,10 @@ class TicTacToe
     draw? || won?
   end
   
+  def winner?
+    won?[0]
+  end
+  
   def input_to_index(user_input)
     u_i = user_input.to_i - 1
     u_i
