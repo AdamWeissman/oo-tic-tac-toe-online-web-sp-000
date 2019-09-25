@@ -49,8 +49,8 @@ class TicTacToe
     @board[index] == " "? false : true
   end
   
-  def valid_move?(positon)
-    (position_taken?(position))? true : false
+  def valid_move?(position)
+    position_taken?(position)? true : false
   end
   
 end
