@@ -30,9 +30,13 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   
-  def input_to_index(user_input) {print "Pick a number 1-9: "(gets.chomp)}
+  def input_to_index(user_input) {gets.strip}
+    print "Pick a number 1 - 9"
     yield
-    user_input
+    if 1..9 !include?(user_input)
+      yield
+    end
+    user_input.to_i - 1
   end
   
 end
