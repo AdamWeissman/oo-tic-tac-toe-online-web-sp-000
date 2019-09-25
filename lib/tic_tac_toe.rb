@@ -39,7 +39,7 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.each do |combo|
+    WIN_COMBINATIONS.find do |combo|
       combo[0] == combo[1] &&
       combo[1] == combo[2]
     end
