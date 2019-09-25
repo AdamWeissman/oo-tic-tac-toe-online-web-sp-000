@@ -47,7 +47,7 @@ class TicTacToe
   end
   
   def full?
-    (turn_count == 8)? true : false
+    (@board.count("X") + @board.count("O") == 9)? true : false
   end
   
   def input_to_index(user_input)
