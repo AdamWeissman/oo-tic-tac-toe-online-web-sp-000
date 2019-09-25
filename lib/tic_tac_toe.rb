@@ -38,6 +38,12 @@ class TicTacToe
     display_board
   end
   
+  def won?
+    WIN_COMBINATIONS.match(board)?
+  end
+  
+  
+  
   def input_to_index(user_input)
     u_i = user_input.to_i - 1
     u_i
