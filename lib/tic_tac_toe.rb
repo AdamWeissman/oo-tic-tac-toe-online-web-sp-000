@@ -59,11 +59,7 @@ class TicTacToe
   end
   
   def winner
-    if @board[won?[0]] == "X" || "O"
-      @board[won?[0]]
-    else
-      nil
-    end
+    won? @board[won?[0]] : nil
   end
   
   def input_to_index(user_input)
