@@ -54,6 +54,10 @@ class TicTacToe
     full? && !won?
   end
   
+  def over?
+    draw? || won?
+  end
+  
   def input_to_index(user_input)
     u_i = user_input.to_i - 1
     u_i
