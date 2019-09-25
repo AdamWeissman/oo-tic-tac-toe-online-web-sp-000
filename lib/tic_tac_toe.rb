@@ -33,7 +33,6 @@ class TicTacToe
   
   def turn
     u_i = gets.chomp
-    u_i
   end
   
   def input_to_index(user_input)
