@@ -58,9 +58,9 @@ class TicTacToe
     draw? || won?
   end
   
-def winner
-  @board(won?.to_a[0])
-end
+  def winner
+    @board[won?[0]]
+  end
   
   def input_to_index(user_input)
     u_i = user_input.to_i - 1
