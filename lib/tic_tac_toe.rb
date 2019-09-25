@@ -1,4 +1,5 @@
 class TicTacToe
+  
   WIN_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
@@ -30,7 +31,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   
-  def input_to_index(user_input) {gets.strip}
+  def input_to_index(user_input) {user_input = gets.strip}
     print "Pick a number 1 - 9"
     yield
     user_input.to_i - 1
