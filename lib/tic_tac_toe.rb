@@ -59,7 +59,8 @@ class TicTacToe
   end
   
   def winner?
-    WIN_COMBINATIONS
+    if combo == won?
+      combo[0].first
   end
   
   def input_to_index(user_input)
