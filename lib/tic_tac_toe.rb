@@ -31,9 +31,9 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   
-  def input_to_index(user_input) {user_input = gets.strip, end}
+  def input_to_index(user_input) { |user_input| user_input = gets.strip}
     print "Pick a number 1 - 9"
-    yield
+    yield user_input
     user_input.to_i - 1
   end
   
