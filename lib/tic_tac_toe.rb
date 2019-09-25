@@ -41,4 +41,8 @@ class TicTacToe
     u_i
   end
   
+  def move(where, who)
+    @board[where] = who
+  end
+  
 end
