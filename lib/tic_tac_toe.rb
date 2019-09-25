@@ -50,6 +50,10 @@ class TicTacToe
     (@board.count("X") + @board.count("O") == 9)? true : false
   end
   
+  def draw?
+    full? && !won?
+  end
+  
   def input_to_index(user_input)
     u_i = user_input.to_i - 1
     u_i
