@@ -33,9 +33,6 @@ class TicTacToe
   def input_to_index(user_input) {gets.strip}
     print "Pick a number 1 - 9"
     yield
-    if 1..9 !include?(user_input)
-      yield
-    end
     user_input.to_i - 1
   end
   
