@@ -57,4 +57,10 @@ class TicTacToe
     end
   end
   
+  def turn(current_player)
+    this_first = user_input
+    this_second = input_to_index(this_first)
+    move(this_second, current_player)
+  end
+  
 end
