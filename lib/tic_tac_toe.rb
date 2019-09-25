@@ -50,7 +50,10 @@ class TicTacToe
   end
   
   def valid_move?(position)
-    position_taken?(position)? true : false
+    if position_taken?(position) && input_to_index(index) == true
+      true
+    else
+      false
   end
   
 end
